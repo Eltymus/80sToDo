@@ -1,0 +1,215 @@
+body{
+    background-color: black;
+    color: red;
+    font-family: "Sixtyfour Convergence";
+    border-left: 10%;
+    border-right: 10%;
+    width: 100%;
+    display: block;    
+}
+.word-wrap{
+    word-wrap: break-word;
+}
+
+.button{
+    background-color: rgb(255, 0, 0);
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+form{
+    display: flex;
+    margin-left: 5%;
+
+}
+
+li  {
+    list-style-type: none; /* Rimuove i bullet predefiniti */
+    margin-bottom: 10px; /* Spazio sotto ogni voce */
+    align-items: center; /* Allinea gli elementi all'interno del li */
+    display: flex; /* Utilizza flexbox per gestire l'allineamento */
+    border: solid 1px;
+    border-color: red; /* Colore del bordo */
+    /* border-radius: 5px; */
+    padding: 10px; /* Padding interno */
+      }
+
+/* Stile per la checkbox */
+.checkbox-custom {
+    width: 20px; /* Grandezza della checkbox */
+    height: 20px; /* Altezza della checkbox */
+    vertical-align: middle; /* Allinea verticalmente con il testo */
+    margin-right: 8px; /* Spazio tra la checkbox e il testo */
+    cursor: pointer; /* Cursor a mano per indicare che è cliccabile */
+    -webkit-appearance: none; /* Rimuove lo stile predefinito per WebKit/Blink */
+    appearance: none; /* Rimuove lo stile predefinito */
+    background-color: #00000000; /* Colore di sfondo */
+    border: 2px solid #ff0800; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+}
+
+.checkbox-custom:checked {
+    background-color: #f70000; /* Colore di sfondo quando selezionato */
+    border-color: #000000; /* Colore del bordo quando selezionato */
+}
+
+.redonBlack{
+    background-color: #000000;
+    color: red;
+}
+
+li button {
+    margin-left: 10px; /* Spazio tra le icone e il testo */
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* CAMBIO DELL'ICONA DEL CALENDAR in bianco */
+
+:root {
+	--pixel-bg: lightblue; /* Inner background color */
+	--pixel-border: black; /* Inner border color: */
+	--pixel-border-2: white; /* Middle border color: */
+	--pixel-border-3: var(--pixel-border); /* Outer border color */
+	--pixel: .125rem; /* Pixel size */
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+
+
+
+
+/* BORDER OF LIST ITEM */
+
+
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 9px),
+    3px calc(100% - 9px),
+    3px calc(100% - 6px),
+    6px calc(100% - 3px),
+    9px calc(100% - 3px),
+    9px 100%,
+    calc(100% - 9px) 100%,
+    calc(100% - 9px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 3px),
+    calc(100% - 3px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 9px),
+    100% calc(100% - 9px),
+    100% 9px,
+    calc(100% - 3px) 9px,
+    calc(100% - 3px) 6px,
+    calc(100% - 6px) 3px,
+    calc(100% - 9px) 3px,
+    calc(100% - 9px) 0px,
+    9px 0px,
+    9px 3px,
+    6px 3px,
+    3px 6px,
+    3px 9px,
+    0px 9px);
+  position: relative;
+}
+
+.pixel-corners {
+  border: 3px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(3px 9px,
+    6px 9px,
+    6px 6px,
+    9px 6px,
+    9px 3px,
+    calc(100% - 9px) 3px,
+    calc(100% - 9px) 6px,
+    calc(100% - 6px) 6px,
+    calc(100% - 6px) 9px,
+    calc(100% - 3px) 9px,
+    calc(100% - 3px) calc(100% - 9px),
+    calc(100% - 6px) calc(100% - 9px),
+    calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 9px) calc(100% - 6px),
+    calc(100% - 9px) calc(100% - 3px),
+    9px calc(100% - 3px),
+    9px calc(100% - 6px),
+    6px calc(100% - 6px),
+    6px calc(100% - 9px),
+    3px calc(100% - 9px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 9px),
+    3px calc(100% - 9px),
+    3px calc(100% - 6px),
+    6px calc(100% - 3px),
+    9px calc(100% - 3px),
+    9px 100%,
+    calc(100% - 9px) 100%,
+    calc(100% - 9px) calc(100% - 3px),
+    calc(100% - 6px) calc(100% - 3px),
+    calc(100% - 3px) calc(100% - 6px),
+    calc(100% - 3px) calc(100% - 9px),
+    100% calc(100% - 9px),
+    100% 9px,
+    calc(100% - 3px) 9px,
+    calc(100% - 3px) 6px,
+    calc(100% - 6px) 3px,
+    calc(100% - 9px) 3px,
+    calc(100% - 9px) 0px,
+    9px 0px,
+    9px 3px,
+    6px 3px,
+    3px 6px,
+    3px 9px,
+    0px 9px,
+    0px 50%,
+    3px 50%,
+    3px 9px,
+    6px 9px,
+    6px 6px,
+    9px 6px,
+    9px 3px,
+    calc(100% - 9px) 3px,
+    calc(100% - 9px) 6px,
+    calc(100% - 6px) 6px,
+    calc(100% - 6px) 9px,
+    calc(100% - 3px) 9px,
+    calc(100% - 3px) calc(100% - 9px),
+    calc(100% - 6px) calc(100% - 9px),
+    calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 9px) calc(100% - 6px),
+    calc(100% - 9px) calc(100% - 3px),
+    9px calc(100% - 3px),
+    9px calc(100% - 6px),
+    6px calc(100% - 6px),
+    6px calc(100% - 9px),
+    3px calc(100% - 9px),
+    3px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff0000;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners::after {
+  margin: -3px;
+}
